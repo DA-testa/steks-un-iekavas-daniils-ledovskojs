@@ -1,4 +1,5 @@
-# python3
+# python 3
+# 221RDB Daniils Ledovskojs 2. grupa
 
 from collections import namedtuple
 
