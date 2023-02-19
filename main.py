@@ -29,9 +29,23 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    mismatch = find_mismatch(text)
-    # Printing answer, write your code here
-    print(mismatch)
+    
+    if text == "F":
+        way_to_file = input("way to file:")
+        with open("input.txt", "r") as f:
+            text2 = f.read()
+            mismatch = find_mismatch(text2)
+            if mismatch == 'Success':
+                print("Succes")
+            else:
+                print(mismatch)
+
+    else:
+        if "I" in text:
+            text2 = input()
+            mismatch = find_mismatch(text2)
+            print(mismatch)
+   
 
 
 
